@@ -10,7 +10,7 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "adminpvnube", "pwd" => "{your_password_here}", "Database" => "pvnube_database", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$connectionInfo = array("UID" => "adminpvnube", "pwd" => "Pv1234567", "Database" => "pvnube_database", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:pvnube-server.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 ?>
