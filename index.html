@@ -7,31 +7,31 @@
     <title>Diagrama de Gantt</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
 
-        #chartdiv {
-            width: 100%;
-            height: 500px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">Diagrama de Gantt de Horarios de Trabajo</h1>
+        <h1 class="mb-4 text-center">Horarios de Trabajo</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-warning btn-icon  me-md-2 btn-scale" id="editButton" type="button"><i
+                    class="bi bi-pencil-fill text-white"></i></button>
+            <button class="btn btn-success btn-icon  me-md-2 btn-scale hidden" id="saveButton" type="button"><i
+                    class="bi bi-check2-circle text-white"></i></button>
+            <button class="btn btn-danger btn-icon me-md-2 btn-scale hidden" id="deletChange" type="button"><i
+                    class="bi bi-x-circle-fill text-white"></i></button>
+        </div>
         <div id="chartdiv"></div>
     </div>
 
     <script src="js/gantt.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Incluye Frappe Gantt aquí -->
 
 </body>
 
